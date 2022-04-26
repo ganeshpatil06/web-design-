@@ -1,0 +1,28 @@
+<!--PROGRAM TO DEMOSTRATE CONFIRMATION DIALOG BOX-->
+<html>
+<head>
+<script type="text/javascript">
+function getconfirmation()
+{
+var retVal=confirm("do you want to continue");
+if(retVal==true)
+{
+document.write("user want to continue");
+return true;
+}
+else
+{
+document.write("user does not want to continue");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<p>click the following button to see the result</p>
+<form>
+<input type="button" value="click me"
+onclick="getconfirmation();"/>
+</form>
+</body>
+</html>
